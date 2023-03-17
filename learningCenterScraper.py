@@ -1,7 +1,7 @@
 #This is the Class Info Scraper -> Gets the Name, Units, When the class is offered, and repeatability
 #This was made by Eric 
 #Do be sure to edit it if you need to!
-
+   
 #Libraries that for python use
 #Make sure you have python, Beautifulsoup, and Requests installed
 from urllib.request import urlopen

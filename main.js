@@ -2,6 +2,8 @@ var express = require('express');
 var app = express();
 //Importing Functions
 const tc = require("./tutorialCenter/tc.js");
+const si = require("./supplementalInstruction/si.js");
+const asc = require("./academicSuccessCoaching/asc.js");
 
 //Endpoint Tutorial Center
 app.get('/tc', function(req,res){

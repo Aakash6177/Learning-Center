@@ -24,3 +24,5 @@ async function connect(){
         await client.close();
     }
 }
+
+module.exports = {connect};

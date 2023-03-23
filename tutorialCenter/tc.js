@@ -1,5 +1,5 @@
 function homeScreen(req,res){
-    res.end("Bye");
+    res.end("Hello");
 }
 function allSubjects(req,res){
     res.json();

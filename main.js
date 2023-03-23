@@ -5,17 +5,18 @@ const tc = require("./tutorialCenter/tc.js");
 const si = require("./supplementalInstruction/si.js");
 const asc = require("./academicSuccessCoaching/asc.js");
 
+
 //Endpoint Tutorial Center
 app.get('/tc', function(req,res){
     tc.homeScreen(req,res);
 });
 //Endpoint Supplemental Instruction
 app.get('/si', function(req,res){
-    res.end();
+    si.homeScreen(req,res);
 });
 //Endppoint Acedemic Success Coaching
 app.get('/asc', function(req,res){
-    res.end();
+    asc.homeScreen(req,res);
 });
 
 //Running Server

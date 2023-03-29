@@ -46,7 +46,7 @@ app.get('/Coaches/:Name', (req, res) => {
 app.post('/Coaches', (req, res) => {
     const coach = req.body
     db.collection('Coaches')
-        .insertOne(coach)
+        .insertMany(coach)
         .then(result => {
             res.status(200).json(result);
         })

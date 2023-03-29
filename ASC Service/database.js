@@ -7,7 +7,7 @@ module.exports = {
     connectToDb: (cb) => { //Create the connection and promise to do so
         MongoClient.connect(uri)
         .then((client) => {
-            dbConnection = client.db()
+            dbConnection = client.db('ASC_Coaches') //This will connect to the specific cluster
             return cb()
         })
         .catch(error => {

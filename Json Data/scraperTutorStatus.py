@@ -5,7 +5,7 @@ import json
 sheet_id = '1c9ulWY3L3aeC2TSHTLtYVmIX7SnO8N0XQHvRmcJuG-k' #Sheet Id
 gid_id = '1468647908'
 #Store data into dataFrame
-dataFrame = pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv{gid_id}", header=6, index_col=None)
+dataFrame = pd.read_csv(f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid_id}", header=6, index_col=None)
 
 tutoringStatusInfo = []
 

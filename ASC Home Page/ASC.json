@@ -24,6 +24,8 @@
             "verticalAlignment": "middle",
             "rowBorderColor": "#e9e9e9",
             "showAccessoryIcons": true,
+            "bodyBackgroundColor": "#d6204e",
+            "titleTextColor": "#f5f6f6",
             "rows": [
                 {
                     "cells": [
@@ -38,6 +40,7 @@
                         "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html",
                         "accessory": "drilldown"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Academic Coaching",
@@ -49,6 +52,7 @@
                     "url": {
                         "external": "https://studentaffairs.fresnostate.edu/lrc/workshops/index.html"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Academic Success Workshops",
@@ -60,6 +64,7 @@
                     "url": {
                         "external": "https://studentaffairs.fresnostate.edu/lrc/asc/toolkit.html"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Toolkits",
@@ -71,10 +76,11 @@
                     "url": {
                         "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Probation",
-                            "description": "Setup a meeting regarding academic standing and meet with an Academic Success Coach."
+                            "description": "Received a letter regarding academic standing? Meet with an Academic Success Coach."
                         }
                     ]
                 },
@@ -82,10 +88,11 @@
                     "url": {
                         "external": "https://studentaffairs.fresnostate.edu/lrc/asc/faculty.html"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Student Referral to Academic Success Coaching",
-                            "description": "I would like to refer a student to Academic Success Coaching for academic coaching."
+                            "description": "Refer a student to Academic Success Coaching for academic coaching."
                         }
                     ]
                 },
@@ -93,14 +100,14 @@
                     "url": {
                         "external": "https://fresnostate.co1.qualtrics.com/jfe/form/SV_8kcWeOVjQeza9a6"
                     },
+                    "descriptionTextColor": "#f5f6f6",
                     "cells": [
                         {
                             "title": "Academic Success Coaching Workshop Request",
-                            "description": "I would like to request a Academic Success Coaching workshop for my class and/or organization."
+                            "description": "Request an Academic Success Coaching workshop for my class and/or organization."
                         }
                     ]
                 }
-
             ]
         }
     ]

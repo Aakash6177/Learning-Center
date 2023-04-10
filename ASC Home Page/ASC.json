@@ -9,6 +9,16 @@
             "borderColor": "transparent"
         },
         {
+            "elementType": "blockHeading",
+            "heading": "Academic Success Coaching",
+            "headingLevel": 1,
+            "headingFontWeight": "light",
+            "description": "Academic Success Coaching provides academic support tailored to your needs, so you can reach your fullest potential at Fresno State. We use a holistic approach to coach students in navigating the college experience. In a dedicated one-on-one setting, topics such as motivation, study skills, time management and much more can be explored.",
+            "descriptionLineHeight": "loose",
+            "descriptionFontStyle": "italic",
+            "descriptionTextColor": "#566573"
+        },
+        {
             "elementType": "table",
             "id": "links_rows",
             "horizontalAlignment": "left",
@@ -30,8 +40,8 @@
                 {
                     "cells": [
                         {
-                            "title": "Academic Success Coaching",
-                            "description": "Academic Success Coaching provides academic support tailored to your needs, so you can reach your fullest potential at Fresno State. We use a holistic approach to coach students in navigating the college experience. In a dedicated one-on-one setting, topics such as motivation, study skills, time management and much more can be explored."
+                            "title": "How Do I Get Started?",
+                            "description": "Get connected with one of our certifed Academic Coaches.  Review the quick statements below to take you where you need to go."
                         }
                     ]
                 },

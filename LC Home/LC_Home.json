@@ -1,0 +1,67 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "narrow",
+    "content": [
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "blockHeading",
+            "heading": "Learning Center",
+            "headingLevel": 1,
+            "headingFontWeight": "light",
+            "description": "Fresno State’s Learning Center is a space which encourages students to grow intellectually as critical thinkers. We advance student success by actively using effective strategies to improve content understanding and course grades. Supplemental Instruction (SI) Leaders and Tutors do not teach, rather facilitate students' learning of difficult topics within historically challenging courses or subjects. Students work one-on-one with Academic Coach who provides individualized support addressing unique student needs. The Learning Center aims to boldly integrate the culture and values of each student to inspire a community of life-long learners.",
+            "descriptionLineHeight": "loose",
+            "descriptionFontStyle": "italic",
+            "descriptionTextColor": "#566573"
+        },
+        {
+            "elementType": "container",
+            "id": "line_clamp",
+            "content": [
+                {
+                    "elementType": "list",
+                    "listStyle": "grouped",
+                    "backgroundColor": "#d6204e",
+                    "titleTextColor": "#f5f6f6",
+                    "titleFontSize": "xxlarge",
+                    "descriptionTextColor": "#f5f6f6",
+                    "borderColor": "#e9e9e9",
+                    "heading": {
+                        "heading": "How Do I Get Started?",
+                        "description": "Review the quick statements below and select the applicable service for you.",
+                        "headingLevel": 3,
+                        "headingTextColor": "black",
+                        "marginTop": "loose"
+                    },
+                    "items": [
+                        {
+                            "title": "Tutoring",
+                            "description": "Studying made simple with students setting their own agenda and working at their own pace",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Supplemental Instruction",
+                            "description": "Peer led, weekly group study sessions offered to students enrolled in historically difficult courses",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Academic Success Coaching",
+                            "description": "Academic and personal coaching on time management, study skills, university resources and much more",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "narrow",
+    "content": [
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "blockHeading",
+            "heading": "Academic Success Coaching",
+            "headingLevel": 1,
+            "headingFontWeight": "light",
+            "description": "Academic Success Coaching provides academic support tailored to your needs, so you can reach your fullest potential at Fresno State. We use a holistic approach to coach students in navigating the college experience. In a dedicated one-on-one setting, topics such as motivation, study skills, time management and much more can be explored.",
+            "descriptionLineHeight": "loose",
+            "descriptionFontStyle": "italic",
+            "descriptionTextColor": "#566573"
+        },
+        {
+            "elementType": "container",
+            "id": "line_clamp",
+            "content": [
+                {
+                    "elementType": "list",
+                    "listStyle": "grouped",
+                    "backgroundColor": "#d6204e",
+                    "titleTextColor": "#f5f6f6",
+                    "descriptionTextColor": "#f5f6f6",
+                    "borderColor": "#e9e9e9",
+                    "heading": {
+                        "heading": "How Do I Get Started?",
+                        "description": "Get connected with one of our certifed Academic Coaches.  Review the quick statements below to take you where you need to go.",
+                        "headingLevel": 3,
+                        "headingTextColor": "black",
+                        "marginTop": "loose"
+                    },
+                    "items": [
+                        {
+                            "title": "Academic Coaching",
+                            "description": "Meet one on one with an Academic Coach.",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Academic Success Workshops",
+                            "description": "Learn more about study strategies on your own time.",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Toolkits",
+                            "description": "Quick tools on how to better organize and study for classes. (Time Management, note taking, etc.)",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Probation",
+                            "description": "Received a letter regarding academic standing? Meet with an Academic Success Coach.",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Student Referral to Academic Success Coaching",
+                            "description": "Refer a student to Academic Success Coaching for academic coaching.",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Academic Success Coaching Workshop Request",
+                            "description": "Request an Academic Success Coaching workshop for my class and/or organization.",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

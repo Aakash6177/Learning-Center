@@ -1,0 +1,67 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "narrow",
+    "content": [
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "blockHeading",
+            "heading": "List Template",
+            "headingLevel": 1,
+            "headingFontWeight": "light",
+            "description": "Description of what page is about",
+            "descriptionLineHeight": "loose",
+            "descriptionFontStyle": "italic",
+            "descriptionTextColor": "#566573"
+        },
+        {
+            "elementType": "container",
+            "id": "line_clamp",
+            "content": [
+                {
+                    "elementType": "list",
+                    "listStyle": "grouped",
+                    "backgroundColor": "#d6204e",
+                    "titleTextColor": "#f5f6f6",
+                    "titleFontSize": "xxlarge",
+                    "descriptionTextColor": "#f5f6f6",
+                    "borderColor": "#e9e9e9",
+                    "heading": {
+                        "heading": "How Do I Get Started?",
+                        "description": "Quick statement on how to get started.",
+                        "headingLevel": 3,
+                        "headingTextColor": "black",
+                        "marginTop": "loose"
+                    },
+                    "items": [
+                        {
+                            "title": "Title",
+                            "description": "Description",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Title",
+                            "description": "Description",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        },
+                        {
+                            "title": "Title",
+                            "description": "Description",
+                            "link": {
+                                "relativePath": ""
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "full",
+    "content": [
+        {
+            "elementType": "container",
+            "id": "vertical_alignment",
+            "content": [
+                {
+                    "elementType": "sideBySide",
+                    "left": {
+                        "preferredWidth": "50%",
+                        "verticalAlignment": "top",
+                        "content": [
+                            {
+                                "elementType": "container",
+                                "padding": "medium",
+                                "content": [
+                                    {
+                                        "elementType": "html",
+                                        "html": "<h1><strong>WELCOME TO TUTORING</strong></h1>"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "right": {
+                        "preferredWidth": "50%",
+                        "content": [
+                            {
+                                "elementType": "nameTag",
+                                "id": "badge_dropdown",
+                                "nameTagStyle": "horizontal",
+                                "name": "Wanda Johnson",
+                                "nameFontSize": "large",
+                                "nameFontWeight": "medium",
+                                "imageHeight": "large",
+                                "imageWidth": "large",
+                                "image": {
+                                    "url": "https://images.generated.photos/2efiyvkKkp2Xy9LPM_TJeI3wlabcuyRzK4sYYY1J51A/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzkyNDUzLmpwZw.jpg",
+                                    "alt": "Photo of Wanda Johnson",
+                                    "badge": {
+                                        "label": "",
+                                        "size": "xsmall",
+                                        "backgroundColor": "#269c00"
+                                    },
+                                    "badgeOffset": "outset"
+                                },
+                                "accessoryButton": {
+                                    "elementType": "dropdown",
+                                    "title": "Settings",
+                                    "toggleSize": "normal",
+                                    "width": "20rem",
+                                    "items": [
+                                        {
+                                            "title": "Account preferences",
+                                            "description": "Options for managing your profile and experience",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        },
+                                        {
+                                            "title": "Sign in and security",
+                                            "description": "Options and controls for logging in and keeping your account safe",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        },
+                                        {
+                                            "title": "Payment information",
+                                            "description": "Review or update saved payment methods",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elementType": "divider",
+                    "borderColor": "transparent"
+                }
+            ]
+        },
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "container",
+            "id": "simple_content_table",
+            "content": [
+                {
+                    "elementType": "blockHeading",
+                    "heading": "  Choose your subject: ",
+                    "headingLevel": 2
+                }
+            ]
+        },
+        {
+            "elementType": "divider",
+            "borderColor": "grey"
+        },
+        {
+            "elementType": "sideBySide",
+            "left": {
+                "preferredWidth": "50%",
+                "verticalAlignment": "top",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>CSCI -> Computer Science</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check Out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "right": {
+                "preferredWidth": "50%",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>MATH -> Mathamatics</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "sideBySide",
+            "left": {
+                "preferredWidth": "50%",
+                "verticalAlignment": "top",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>PHYS -> Physics</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check Out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "right": {
+                "preferredWidth": "50%",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>CHEM -> Chemestry</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "sideBySide",
+            "left": {
+                "preferredWidth": "50%",
+                "verticalAlignment": "top",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>PHYCH -> Psychology</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check Out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "right": {
+                "preferredWidth": "50%",
+                "content": [
+                    {
+                        "elementType": "container",
+                        "padding": "medium",
+                        "borderStyle": "solid",
+                        "borderColor": "theme:focal_border_color",
+                        "backgroundColor": "#f4f4f4",
+                        "marginBottom": "none",
+                        "content": [
+                            {
+                                "elementType": "html",
+                                "html": "<h2><strong>CSDS -> Communicative Disorders</strong></h2>"
+                            },
+                            {
+                                "elementType": "divider",
+                                "borderColor": "transparent"
+                            },
+                            {
+                                "elementType": "linkButton",
+                                "title": "Check out Tutors"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}

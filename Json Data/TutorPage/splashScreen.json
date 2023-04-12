@@ -1,0 +1,240 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "full",
+    "content": [
+        {
+            "elementType": "container",
+            "id": "vertical_alignment",
+            "content": [
+                {
+                    "elementType": "sideBySide",
+                    "left": {
+                        "preferredWidth": "50%",
+                        "verticalAlignment": "top",
+                        "content": [
+                            {
+                                "elementType": "container",
+                                "padding": "medium",
+                                "content": [
+                                    {
+                                        "elementType": "html",
+                                        "html": "<h1><strong>LEARNING CENTER</strong></h1>"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "right": {
+                        "preferredWidth": "50%",
+                        "content": [
+                            {
+                                "elementType": "nameTag",
+                                "id": "badge_dropdown",
+                                "nameTagStyle": "horizontal",
+                                "name": "Wanda Johnson",
+                                "nameFontSize": "large",
+                                "nameFontWeight": "medium",
+                                "imageHeight": "large",
+                                "imageWidth": "large",
+                                "image": {
+                                    "url": "https://images.generated.photos/2efiyvkKkp2Xy9LPM_TJeI3wlabcuyRzK4sYYY1J51A/rs:fit:512:512/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzkyNDUzLmpwZw.jpg",
+                                    "alt": "Photo of Wanda Johnson",
+                                    "badge": {
+                                        "label": "",
+                                        "size": "xsmall",
+                                        "backgroundColor": "#269c00"
+                                    },
+                                    "badgeOffset": "outset"
+                                },
+                                "accessoryButton": {
+                                    "elementType": "dropdown",
+                                    "title": "Settings",
+                                    "toggleSize": "normal",
+                                    "width": "20rem",
+                                    "items": [
+                                        {
+                                            "title": "Account preferences",
+                                            "description": "Options for managing your profile and experience",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        },
+                                        {
+                                            "title": "Sign in and security",
+                                            "description": "Options and controls for logging in and keeping your account safe",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        },
+                                        {
+                                            "title": "Payment information",
+                                            "description": "Review or update saved payment methods",
+                                            "link": {
+                                                "relativePath": ""
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "elementType": "divider",
+                    "borderColor": "transparent"
+                }
+            ]
+        },
+        {
+            "elementType": "divider",
+            "borderColor": "transparent"
+        },
+        {
+            "elementType": "hero",
+            "height": "fluid",
+            "contentContainerWidth": "medium",
+            "backgroundImage": {
+                "url": "https://drive.google.com/file/d/1wIo2F384XXELTWk6NptBBtUV_c_CV9xv/view?usp=share_link",
+                "cropHorizontalPosition": "right",
+                "cropVerticalPosition": "top",
+                "overlayType": "gradient",
+                "overlayGradientStartColor": "#c9c8c6",
+                "overlayGradientAngle": 90
+            },
+            "content": [
+                {
+                    "elementType": "heroImage",
+                    "imageSize": "2rem",
+                    "image": {
+                        "url": "https://static.modolabs.com/modo4/documentation/images/logos/logo.png"
+                    },
+                    "marginTop": "xloose",
+                    "marginBottom": "xxtight",
+                    "horizontalAlignment": "left"
+                },
+                {
+                    "elementType": "heroHeading",
+                    "heading": "Tutoring",
+                    "fontSize": "2rem",
+                    "textAlignment": "left"
+                },
+                {
+                    "elementType": "heroButtons",
+                    "marginBottom": "2rem",
+                    "buttons": [
+                        {
+                            "elementType": "linkButton",
+                            "backgroundColor": "rgba(255,255,255,0.25)",
+                            "borderColor": "#d31323",
+                            "borderWidth": "2px",
+                            "title": "Go To",
+                            "textColor": "#000000"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elementType": "divider",
+            "borderStyle": "none",
+            "marginBottom": "xloose"
+        },
+        {
+            "elementType": "hero",
+            "height": "fluid",
+            "contentContainerWidth": "medium",
+            "backgroundImage": {
+                "url": "https://drive.google.com/file/d/1wIo2F384XXELTWk6NptBBtUV_c_CV9xv/view?usp=share_link",
+                "cropHorizontalPosition": "right",
+                "cropVerticalPosition": "top",
+                "overlayType": "gradient",
+                "overlayGradientStartColor": "#c9c8c6",
+                "overlayGradientAngle": 90
+            },
+            "content": [
+                {
+                    "elementType": "heroImage",
+                    "imageSize": "2rem",
+                    "image": {
+                        "url": "https://static.modolabs.com/modo4/documentation/images/logos/logo.png"
+                    },
+                    "marginTop": "xloose",
+                    "marginBottom": "xxtight",
+                    "horizontalAlignment": "left"
+                },
+                {
+                    "elementType": "heroHeading",
+                    "heading": "Supplemental Instruction",
+                    "fontSize": "2rem",
+                    "textAlignment": "left"
+                },
+                {
+                    "elementType": "heroButtons",
+                    "marginBottom": "2rem",
+                    "buttons": [
+                        {
+                            "elementType": "linkButton",
+                            "backgroundColor": "rgba(255,255,255,0.25)",
+                            "borderColor": "#d31323",
+                            "borderWidth": "2px",
+                            "title": "Go To",
+                            "textColor": "#000000"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "elementType": "divider",
+            "borderStyle": "none",
+            "marginBottom": "xloose"
+        },
+        {
+            "elementType": "hero",
+            "height": "fluid",
+            "contentContainerWidth": "medium",
+            "backgroundImage": {
+                "url": "https://drive.google.com/file/d/1wIo2F384XXELTWk6NptBBtUV_c_CV9xv/view?usp=share_link",
+                "cropHorizontalPosition": "right",
+                "cropVerticalPosition": "top",
+                "overlayType": "gradient",
+                "overlayGradientStartColor": "#c9c8c6",
+                "overlayGradientAngle": 90
+            },
+            "content": [
+                {
+                    "elementType": "heroImage",
+                    "imageSize": "2rem",
+                    "image": {
+                        "url": "https://static.modolabs.com/modo4/documentation/images/logos/logo.png"
+                    },
+                    "marginTop": "xloose",
+                    "marginBottom": "xxtight",
+                    "horizontalAlignment": "left"
+                },
+                {
+                    "elementType": "heroHeading",
+                    "heading": "Acedemic Success Coaching",
+                    "fontSize": "2rem",
+                    "textAlignment": "left"
+                },
+                {
+                    "elementType": "heroButtons",
+                    "marginBottom": "2rem",
+                    "buttons": [
+                        {
+                            "elementType": "linkButton",
+                            "backgroundColor": "rgba(255,255,255,0.25)",
+                            "borderColor": "#d31323",
+                            "borderWidth": "2px",
+                            "title": "Go To",
+                            "textColor": "#000000"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

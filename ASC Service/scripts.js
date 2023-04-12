@@ -27,8 +27,8 @@ app.get('/Coaches', (req, res) => {
         .then(() => {
             res.status(200).json(coaches)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not fetch documents"})
+        .catch((error) => {
+            res.status(500).json({Error: error.message})
         })
 });
 
@@ -38,8 +38,8 @@ app.get('/Coaches/:Name', (req, res) => {
         .then(doc => {
             res.status(200).json(doc) //doc is the person's data
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not fetch document"})
+        .catch((error) => {
+            res.status(500).json({Error: error.message})
         })
 });
 
@@ -50,8 +50,8 @@ app.post('/Coaches', (req, res) => {
         .then(result => {
             res.status(200).json(result);
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not create new document"})
+        .catch((error) => {
+            res.status(500).json({Error: error.message})
         })
 });
 
@@ -62,8 +62,8 @@ app.delete('/Coaches/:Name', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not delete document"})
+        .catch((error) => {
+            res.status(500).json({Error: error.message})
         })
 });
 
@@ -74,7 +74,7 @@ app.patch('/Coaches/:Name', (req,res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not update document"})
+        .catch((error) => {
+            res.status(500).json({Error: error.message})
         })
 })

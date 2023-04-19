@@ -5,6 +5,7 @@ const bodyParser = require('body-parser'); // Parses the requests when we need t
 app.use(bodyParser.json()); // read Json files
 const {connectToDb, getDb} = require('./database')
 const { spawn } = require('child_process')
+const template = require("../SI Template/SI_Leader_Template.json")
 
 //Connect to Database
 let db
@@ -81,11 +82,36 @@ app.get('/Leaders', (req, res) => {
         })
 });
 
-app.get('/Leaders/:Name', (req, res) => {
+app.get('/Leaders/:Subject', (req, res) => {
+    let siLeaders = [];
     db.collection('Leaders') //Get the database
-        .findOne({"SI Leader": req.params.Name}) //Get One person
+        .find({"Subject": {$regex: req.params.Subject}}) //Get One person
+        .forEach(leader => siLeaders.push(leader))
         .then(doc => {
-            res.status(200).json(doc) //doc is the person's data
+            // template = JSON.parse(template);
+            template.content[0].items.length = 0;
+            for(i = 0; i < siLeaders.length; i++){
+                template.content[0].items.push(
+                    {
+                        "imageHorizontalPosition": "right",
+                        "imageVerticalPosition": "top",
+                        "title": "SI Leader: " + siLeaders[i]["SI Leader"],
+                        "description": "Instructor: " + siLeaders[i]["Instructor"] + "<br>"
+                                     + "Subject: " + siLeaders[i]["Subject"] + "<br>"
+                                     + "Pronouns: " + siLeaders[i]["SI Leader"] + "<br>"
+                                     + "Sessions:<br>" +
+                                     + siLeaders[i]["Session One"] + "<br>"
+                                     + siLeaders[i]["Session Two"] + "<br><br>"
+                                     + "Office Hours:<br>"
+                                     + siLeaders[i]["Office Hour One"] + "<br>"
+                                     + siLeaders[i]["Office Hour Two"] + "<br><br>"
+                                     + "Zoom Link: <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a><br>"
+                    }
+                )
+            }
+            // console.log(template)
+            //template = JSON.stringify(template)
+            res.status(200).json(template) //doc is the person's data
         })
         .catch(() => {
             res.status(500).json({Error: "Could not fetch document"})

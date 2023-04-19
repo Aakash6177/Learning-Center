@@ -8,12 +8,6 @@
   "contentContainerWidth": "full",
   "content": [
     {
-    "elementType": "html",
-    "html": "<body>Will this work?</body>"
-    }
-    ],
-  "content": [
-    {
       "elementType": "grid",
       "id": "style_springboard",
       "gridStyle": "springboard",
@@ -29,7 +23,7 @@
           }
         },
         {
-          "label": "Briefcase",
+          "label": "Supplemental Instruction",
           "link": {
             "relativePath": ""
           },
@@ -38,93 +32,12 @@
           }
         },
         {
-          "label": "Calendar",
+          "label": "Academic Success Coaching",
           "link": {
             "relativePath": ""
           },
           "image": {
             "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/calendar.png"
-          }
-        },
-        {
-          "label": "Computers",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/computers.png"
-          }
-        },
-        {
-          "label": "Courses",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/courses.png"
-          }
-        },
-        {
-          "label": "Dining",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/dining.png"
-          }
-        },
-        {
-          "label": "Facemask",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/facemask.png"
-          }
-        },
-        {
-          "label": "Facilities",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/facilities.png"
-          }
-        },
-        {
-          "label": "Grades",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/grades.png"
-          }
-        },
-        {
-          "label": "Laundry",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/laundry.png"
-          }
-        },
-        {
-          "label": "Map",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/map.png"
-          }
-        },
-        {
-          "label": "Transit",
-          "link": {
-            "relativePath": ""
-          },
-          "image": {
-            "url": "https://static.modolabs.com/xmodule/iconsets/stroke-fullcolor/120/transit.png"
           }
         }
       ]

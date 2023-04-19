@@ -8,12 +8,6 @@
   "contentContainerWidth": "full",
   "content": [
     {
-    "elementType": "html",
-    "html": "<body>Will this work?</body>"
-    }
-    ],
-  "content": [
-    {
       "elementType": "grid",
       "id": "style_springboard",
       "gridStyle": "springboard",
@@ -29,7 +23,7 @@
           }
         },
         {
-          "label": "Briefcase",
+          "label": "Supplemental Instruction",
           "link": {
             "relativePath": ""
           },
@@ -38,7 +32,7 @@
           }
         },
         {
-          "label": "Calendar",
+          "label": "Academic Success Coaching",
           "link": {
             "relativePath": ""
           },

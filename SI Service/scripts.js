@@ -97,15 +97,22 @@ app.get('/Leaders/:Subject', (req, res) => {
                         "imageVerticalPosition": "top",
                         "title": "SI Leader: " + siLeaders[i]["SI Leader"],
                         "description": "Instructor: " + siLeaders[i]["Instructor"] + "<br>"
-                                     + "Subject: " + siLeaders[i]["Subject"] + "<br>"
+                                     + "Subject: " + siLeaders[i]["Subject"] + "<br><br>"
                                      + "Pronouns: " + siLeaders[i]["SI Leader"] + "<br>"
-                                     + "Sessions:<br>" +
+                                     + "Sessions:<br>"
                                      + siLeaders[i]["Session One"] + "<br>"
                                      + siLeaders[i]["Session Two"] + "<br><br>"
                                      + "Office Hours:<br>"
                                      + siLeaders[i]["Office Hour One"] + "<br>"
                                      + siLeaders[i]["Office Hour Two"] + "<br><br>"
-                                     + "Zoom Link: <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a><br>"
+                                     + "Zoom Link: <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a><br>",
+                        "link": {
+                            "relativePath": ""
+                        },
+                        "image": {
+                            "url": siLeaders[i]["Image Url"],
+                            "alt": siLeaders[i]["SI Leader"]
+                        }
                     }
                 )
             }

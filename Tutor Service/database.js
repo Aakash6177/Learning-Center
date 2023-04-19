@@ -1,7 +1,8 @@
 //Connect and return the database
 const {MongoClient} = require('mongodb'); // Connects to Mongo
 let dbConnection
-let uri = "mongodb+srv://ey539629:xQxZQFrTNfv9qzfa@cluster0.wtu69ka.mongodb.net/?retryWrites=true&w=majority"
+let uri = "mongodb+srv://csci_152:tutoring123@aakashclustertutoring.z4tvblg.mongodb.net/?retryWrites=true&w=majority"
+//"mongodb+srv://ey539629:xQxZQFrTNfv9qzfa@cluster0.wtu69ka.mongodb.net/?retryWrites=true&w=majority"
 module.exports = {
     connectToDb: (callBack) => { //Run callback function after the connection
         MongoClient.connect(uri) // Connection to a "url" | This is local

@@ -146,8 +146,8 @@ app.patch('/tutors/:Tutor', (req, res) => {
 
 
 
-//const interval = 5 * 60 * 1000
-//setInterval(runScraper, interval);
+const interval = 5 * 60 * 1000
+setInterval(runScraper, interval);
 
 
 //npm install mongodb --save --> Connects to mongo db

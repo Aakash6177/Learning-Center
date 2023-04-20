@@ -3,15 +3,14 @@ const app = express();
 app.use(express.json()) //Parse the Json
 const bodyParser = require('body-parser'); // Parses the requests when we need to
 app.use(bodyParser.json()); // read Json files
-const {connectToDb, getDb} = require('./database.js')
+const { connectToDb, getDb } = require('./database.js')
 const { spawn } = require('child_process')
 const template = require("../Tutor Template/tutor_temp_template.json")
 
-//let template = data.content[0].items;
 //Database connection
 let db
 connectToDb((err) => {
-    if(!err){ //If no errors, continue to connect to db
+    if (!err) { //If no errors, continue to connect to db
         app.listen(4000, () => {
             console.log("Listening to Port 4000...")
         }); //Listen to port 4000
@@ -22,7 +21,7 @@ connectToDb((err) => {
 
 const scraper = 'scraperTutor.py'
 const dailyScraper = 'scraperTutorStatus.py'
-function runScraper(){
+function runScraper() {
     spawn('py', [scraper]) //Call Scraper --> Will by python3 instead of py in cloud
     let tutorData = require('./tutorData.json')
 
@@ -31,13 +30,13 @@ function runScraper(){
         .then(() => {
             console.log("Delete Success");
             db.collection('tutors')
-            .insertMany(tutorData)
-            .then(() => {
-                console.log("Update Success");
-            })
-            .catch((error) => {
-                console.log("Update Fail: ", error);
-            })
+                .insertMany(tutorData)
+                .then(() => {
+                    console.log("Update Success");
+                })
+                .catch((error) => {
+                    console.log("Update Fail: ", error);
+                })
         })
         .catch((error) => {
             console.log("Delete Fail: ", error);
@@ -45,7 +44,7 @@ function runScraper(){
 
 }
 
-function runDailyScraper(){
+function runDailyScraper() {
     spawn('py', [dailyScraper]) //Call Scraper --> Will by python3 instead of py in cloud
     let tutorDailyData = require('./tutorDailyData.json')
 
@@ -54,13 +53,13 @@ function runDailyScraper(){
         .then(() => {
             console.log("Daily Delete Success");
             db.collection('tutorsDaily')
-            .insertMany(tutorDailyData)
-            .then(() => {
-                console.log("Daily Update Success");
-            })
-            .catch((error) => {
-                console.log("Daily Update Fail: ", error);
-            })
+                .insertMany(tutorDailyData)
+                .then(() => {
+                    console.log("Daily Update Success");
+                })
+                .catch((error) => {
+                    console.log("Daily Update Fail: ", error);
+                })
         })
         .catch((error) => {
             console.log("Daily Delete Fail: ", error);
@@ -71,63 +70,84 @@ function runDailyScraper(){
 
 //CRUD and Routes
 app.get('/tutors', (req, res) => { //Find tutors
-    //Current Page -> (Optional)
-    //const page = req.query.p || 0
-    //const tutorsPerPage = 5 //Only 5 Tutors per screen
-
     let tutors = [] //Storing all the data into here
     db.collection('tutors') //Get the collection from mongo
         .find() //Get all the data -> fetches as a json file | Is actually a "Cursor" -> Use toArray or forEach
-        .sort({Subject: 1, Tutor: 1}) //Sort by subject and name
-        // .skip(page * tutorsPerPage) //We are only showing this many --> Skip doesn't actually skip. Loads the next ones (Optional)
-        // .limit(tutorsPerPage) // Show the 5 we want to show first (Optional)
+        .sort({ Subject: 1, Tutor: 1 }) //Sort by subject and name
         .forEach(tutor => tutors.push(tutor)) //Fill the Tutor array
         .then(() => {
             res.status(200).json(tutors); //If all good, send back the tutors
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({ Error: error })
         })
 })
 
 app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
     let tutors = []
     db.collection('tutors')
-        .find({Subject: req.params.Subject})
-        .sort({Tutor: 1})
+        .find({ Subject: req.params.Subject })
+        .sort({ Tutor: 1 })
         .forEach(tutor => tutors.push(tutor)) //
         .then(() => {
+            let status = require("./tutorDailyData.json");
             template.content[0].items.length = 0;
             template.content[0].heading.heading = tutors[0]["Subject"];
-            for(i = 0; i < tutors.length; i++){
-                if(tutors[i]["Specializations"] == "" || typeof(tutors[i]["Specializations"]) == null){
+            for (i = 0; i < tutors.length; i++) {
+                let tutorStatus = status.find(stat => stat["Tutor Name"] === tutors[i]["Tutor Name"])
+                let statusOnOff;
+                if (tutorStatus.Status == "Out") { //"../Tutor Custom Images/off.png"
+                    statusOnOff = "https://emojis.wiki/thumbs/emojis/red-circle.webp"
+                }
+                else { //"../Tutor Custom Images/on.png"
+                    statusOnOff = "https://emojis.wiki/thumbs/emojis/green-circle.webp"
+                }
+                if (tutors[i]["Specializations"] == "" || typeof (tutors[i]["Specializations"]) == null) {
                     template.content[0].items.push(
                         {
-                            "title": "SI Leader: " + tutors[i]["Tutor Name"],
+                            "title": "Tutor: " + tutors[i]["Tutor Name"],
                             "description": "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
-                                         + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
-                                         + "Schedule: <br>"
-                                         + "M: " + tutors[i]["Monday"] + "<br>"
-                                         + "T: " + tutors[i]["Tuesday"] + "<br>"
-                                         + "W: " + tutors[i]["Wednesday"] + "<br>"
-                                         + "TH: " + tutors[i]["Thursday"] + "<br>"
-                                         + "F: " + tutors[i]["Friday"] + "<br>"
+                                + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                + "Schedule: <br>"
+                                + "M: " + tutors[i]["Monday"] + "<br>"
+                                + "T: " + tutors[i]["Tuesday"] + "<br>"
+                                + "W: " + tutors[i]["Wednesday"] + "<br>"
+                                + "TH: " + tutors[i]["Thursday"] + "<br>"
+                                + "F: " + tutors[i]["Friday"] + "<br>",
+                            "imageHorizontalPosition": "right",
+                            "imageVerticalPosition": "top",
+                            "imageBorderRadius": "full",
+                            "imageStyle": "thumbnailSmall",
+                            "image": {
+                                "size": "small",
+                                "url": statusOnOff,
+                                "alt": tutors[i]["Tutor Name"]
+                            }
                         }
                     )
                 }
-                else{
+                else {
                     template.content[0].items.push(
                         {
-                            "title": "SI Leader: " + tutors[i]["Tutor Name"],
+                            "title": "Tutor: " + tutors[i]["Tutor Name"],
                             "description": "Specializations: " + tutors[i]["Specializations"] + "<br><br>"
-                                         + "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
-                                         + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
-                                         + "Schedule: <br>"
-                                         + "M: " + tutors[i]["Monday"] + "<br>"
-                                         + "T: " + tutors[i]["Tuesday"] + "<br>"
-                                         + "W: " + tutors[i]["Wednesday"] + "<br>"
-                                         + "TH: " + tutors[i]["Thursday"] + "<br>"
-                                         + "F: " + tutors[i]["Friday"] + "<br>"
+                                + "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
+                                + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                + "Schedule: <br>"
+                                + "M: " + tutors[i]["Monday"] + "<br>"
+                                + "T: " + tutors[i]["Tuesday"] + "<br>"
+                                + "W: " + tutors[i]["Wednesday"] + "<br>"
+                                + "TH: " + tutors[i]["Thursday"] + "<br>"
+                                + "F: " + tutors[i]["Friday"] + "<br>",
+                            "imageHorizontalPosition": "right",
+                            "imageVerticalPosition": "top",
+                            "imageBorderRadius": "full",
+                            "imageStyle": "thumbnailSmall",
+                            "image": {
+                                "size": "small",
+                                "url": statusOnOff,
+                                "alt": tutors[i]["Tutor Name"]
+                            }
                         }
                     )
                 }
@@ -135,7 +155,7 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
             res.status(200).json(template);
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({ Error: error })
         })
 })
 
@@ -147,18 +167,18 @@ app.post('/tutors', (req, res) => {
             res.status(200).json(result);
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({ Error: error })
         })
 })
 
-app.delete('/tutors/:Tutor', (req,res) => {
+app.delete('/tutors/:Tutor', (req, res) => {
     db.collection('tutors')
-        .deleteOne({Tutor: req.params.Tutor})
+        .deleteOne({ Tutor: req.params.Tutor })
         .then(result => {
             res.status(200).json(result)
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({ Error: error })
         })
 })
 
@@ -166,12 +186,12 @@ app.delete('/tutors/:Tutor', (req,res) => {
 app.patch('/tutors/:Tutor', (req, res) => {
     const tutorUpdate = req.body
     db.collection('tutors')
-        .updateOne({Tutor: req.params.Tutor}, {$set: tutorUpdate})
+        .updateOne({ Tutor: req.params.Tutor }, { $set: tutorUpdate })
         .then(result => {
             res.status(200).json(result)
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({ Error: error })
         })
 })
 

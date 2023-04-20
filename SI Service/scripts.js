@@ -104,9 +104,6 @@ app.get('/Leaders/:Subject', (req, res) => {
                                      + siLeaders[i]["Office Hour One"] + "<br>"
                                      + siLeaders[i]["Office Hour Two"] + "<br><br>"
                                      + "Zoom Link: <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a><br>",
-                        "link": {
-                            "relativePath": ""
-                        },
                         "image": {
                             "url": siLeaders[i]["Image Url"],
                             "alt": siLeaders[i]["SI Leader"]

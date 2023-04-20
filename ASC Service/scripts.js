@@ -118,5 +118,5 @@ app.patch('/Coaches/:Name', (req, res) => {
         })
 })
 
-const interval = 5 * 1 * 1000
+const interval = 5 * 60 * 1000
 setInterval(runScraper, interval);

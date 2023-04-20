@@ -11,10 +11,10 @@
             "backgroundColor": "theme:subfocal_background_color",
             "borderColor": "transparent",
             "heading": {
-                "heading": "Separated Style",
-                "headingLevel": 3,
-                "headingTextColor": "grey",
-                "description": "With subfocal background color for visibility; otherwise focal-on-focal colors would make it impossible to see the separated list styling"
+                "heading": "SI Leaders: ",
+                "headingLevel": 2,
+                "headingTextColor": "black",
+                "description": "Search through the SI leaders to find the perfect one for your on a given subject."
             },
             "items": [
                 {

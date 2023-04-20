@@ -1,0 +1,5 @@
+!Link: https://www.npoint.io/docs/bdb5914c188319c0a59b
+This will be a link to the npoint for the ASC_Homepage
+
+Alternative link to SplashPage:
+!Link: https://api.npoint.io/5ba96de3a83b15ad7203

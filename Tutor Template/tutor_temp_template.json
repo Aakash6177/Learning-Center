@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "version": "2.0"
+    },
+    "contentContainerWidth": "narrow",
+    "content": [
+        {
+            "elementType": "list",
+            "itemSize": "unlimited",
+            "listStyle": "separated",
+            "backgroundColor": "theme:subfocal_background_color",
+            "borderColor": "transparent",
+            "heading": {
+                "heading": "Separated Style",
+                "headingLevel": 3,
+                "headingTextColor": "grey",
+                "description": "With subfocal background color for visibility; otherwise focal-on-focal colors would make it impossible to see the separated list styling"
+            },
+            "items": [
+                {
+                    "imageHorizontalPosition": "right",
+                    "imageVerticalPosition": "top",
+                    "title": "Item with a title, description and thumbnail image",
+                    "description": "Apples <br> Pies <br> Testing <br> Testing <br>Testing <br>Testing <br>Testing <br>",
+                    "link": {
+                        "relativePath": ""
+                    },
+                    "image": {
+                        "url": "https://images.unsplash.com/photo-1622709280264-9ec6247282de?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80",
+                        "alt": "Dima Pima"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -87,7 +87,7 @@ app.get('/Leaders/:Subject', (req, res) => {
     db.collection('Leaders') //Get the database
         .find({"Subject": {$regex: req.params.Subject}}) //Get One person
         .forEach(leader => siLeaders.push(leader))
-        .then(doc => {
+        .then(() => {
             // template = JSON.parse(template);
             template.content[0].items.length = 0;
             for(i = 0; i < siLeaders.length; i++){

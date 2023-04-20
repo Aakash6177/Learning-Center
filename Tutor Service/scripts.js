@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Parses the requests when we need t
 app.use(bodyParser.json()); // read Json files
 const {connectToDb, getDb} = require('./database.js')
 const { spawn } = require('child_process')
-//const data = require("./TutorSubjectTemplate.json")
+const template = require("../Tutor Template/tutor_temp_template.json")
 
 //let template = data.content[0].items;
 //Database connection
@@ -14,7 +14,7 @@ connectToDb((err) => {
     if(!err){ //If no errors, continue to connect to db
         app.listen(4000, () => {
             console.log("Listening to Port 4000...")
-        }); //Listen to port 3000
+        }); //Listen to port 4000
         db = getDb()
     }
 })
@@ -69,23 +69,17 @@ function runScraper(){
 //CRUD and Routes
 app.get('/tutors', (req, res) => { //Find tutors
     //Current Page -> (Optional)
-    const page = req.query.p || 0
-    const tutorsPerPage = 5 //Only 5 Tutors per screen
+    //const page = req.query.p || 0
+    //const tutorsPerPage = 5 //Only 5 Tutors per screen
 
     let tutors = [] //Storing all the data into here
     db.collection('tutors') //Get the collection from mongo
         .find() //Get all the data -> fetches as a json file | Is actually a "Cursor" -> Use toArray or forEach
         .sort({Subject: 1, Tutor: 1}) //Sort by subject and name
-        .skip(page * tutorsPerPage) //We are only showing this many --> Skip doesn't actually skip. Loads the next ones (Optional)
-        .limit(tutorsPerPage) // Show the 5 we want to show first (Optional)
+        // .skip(page * tutorsPerPage) //We are only showing this many --> Skip doesn't actually skip. Loads the next ones (Optional)
+        // .limit(tutorsPerPage) // Show the 5 we want to show first (Optional)
         .forEach(tutor => tutors.push(tutor)) //Fill the Tutor array
         .then(() => {
-            // data = JSON.parse(template);
-            // for(i = 0; i < template.length; i++){
-            //     template[i].label = tutors[0]["Tutor Name"];
-            // }
-            //modifiedTemplate = JSON.stringify(data);
-            // console.log(template.length);
             res.status(200).json(tutors); //If all good, send back the tutors
         })
         .catch(() => {
@@ -100,7 +94,42 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
         .sort({Tutor: 1})
         .forEach(tutor => tutors.push(tutor)) //
         .then(() => {
-            res.status(200).json(tutors);
+            template.content[0].items.length = 0;
+            template.content[0].heading.heading = tutors[0]["Subject"];
+            for(i = 0; i < tutors.length; i++){
+                if(tutors[i]["Specializations"] == "" || typeof(tutors[i]["Specializations"]) == null){
+                    template.content[0].items.push(
+                        {
+                            "title": "SI Leader: " + tutors[i]["Tutor Name"],
+                            "description": "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
+                                         + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                         + "Schedule: <br>"
+                                         + "M: " + tutors[i]["Monday"] + "<br>"
+                                         + "T: " + tutors[i]["Tuesday"] + "<br>"
+                                         + "W: " + tutors[i]["Wednesday"] + "<br>"
+                                         + "TH: " + tutors[i]["Thursday"] + "<br>"
+                                         + "F: " + tutors[i]["Friday"] + "<br>"
+                        }
+                    )
+                }
+                else{
+                    template.content[0].items.push(
+                        {
+                            "title": "SI Leader: " + tutors[i]["Tutor Name"],
+                            "description": "Specializations: " + tutors[i]["Specializations"] + "<br><br>"
+                                         + "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
+                                         + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                         + "Schedule: <br>"
+                                         + "M: " + tutors[i]["Monday"] + "<br>"
+                                         + "T: " + tutors[i]["Tuesday"] + "<br>"
+                                         + "W: " + tutors[i]["Wednesday"] + "<br>"
+                                         + "TH: " + tutors[i]["Thursday"] + "<br>"
+                                         + "F: " + tutors[i]["Friday"] + "<br>"
+                        }
+                    )
+                }
+            }
+            res.status(200).json(template);
         })
         .catch(() => {
             res.status(500).json({error: "Could not fetch document"})
@@ -109,7 +138,6 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
 
 app.post('/tutors', (req, res) => {
     const tutor = req.body
-
     db.collection('tutors')
         .insertOne(tutor)
         .then(result => {

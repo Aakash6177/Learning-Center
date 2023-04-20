@@ -55,8 +55,8 @@ app.get('/Coaches', (req, res) => {
         .then(() => {
             res.status(200).json(coaches)
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not fetch documents" })
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -66,8 +66,8 @@ app.get('/Coaches/:Name', (req, res) => {
         .then(doc => {
             res.status(200).json(doc) //doc is the person's data
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not fetch document" })
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -78,8 +78,8 @@ app.post('/Coaches', (req, res) => {
         .then(result => {
             res.status(200).json(result);
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not create new document" }) //fix
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -90,8 +90,8 @@ app.delete('/Coaches/:Name', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not delete document" })
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -101,8 +101,8 @@ app.delete('/Coaches', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not delete document" })
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -113,10 +113,10 @@ app.patch('/Coaches/:Name', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({ Error: "Could not update document" })
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
-const interval = 5 * 60 * 1000
+const interval = 5 * 1 * 1000
 setInterval(runScraper, interval);

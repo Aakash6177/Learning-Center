@@ -23,10 +23,8 @@ connectToDb((err) => {
 const scraper = 'scraperTutor.py'
 const dailyScraper = 'scraperTutorStatus.py'
 function runScraper(){
-    spawn('py', [scraper, dailyScraper]) //Call Scraper --> Will by python3 instead of py in cloud
-    console.log("Tutor Data Updated") //Tell us it updated
+    spawn('py', [scraper]) //Call Scraper --> Will by python3 instead of py in cloud
     let tutorData = require('./tutorData.json')
-    let tutorDailyData = require('./tutorDailyData.json')
 
     db.collection('tutors')
         .deleteMany({})
@@ -45,6 +43,11 @@ function runScraper(){
             console.log("Delete Fail: ", error);
         })
 
+}
+
+function runDailyScraper(){
+    spawn('py', [dailyScraper]) //Call Scraper --> Will by python3 instead of py in cloud
+    let tutorDailyData = require('./tutorDailyData.json')
 
     db.collection('tutorsDaily')
         .deleteMany({})
@@ -82,8 +85,8 @@ app.get('/tutors', (req, res) => { //Find tutors
         .then(() => {
             res.status(200).json(tutors); //If all good, send back the tutors
         })
-        .catch(() => {
-            res.status(500).json({error: "Could not fetch documents"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -131,8 +134,8 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
             }
             res.status(200).json(template);
         })
-        .catch(() => {
-            res.status(500).json({error: "Could not fetch document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -143,8 +146,8 @@ app.post('/tutors', (req, res) => {
         .then(result => {
             res.status(200).json(result);
         })
-        .catch(err => {
-            res.status(500).json({error: "Could not create new document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -154,8 +157,8 @@ app.delete('/tutors/:Tutor', (req,res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(err => {
-            res.status(500).json({error: "Could not delete document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -167,8 +170,8 @@ app.patch('/tutors/:Tutor', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(err => {
-            res.status(500).json({error: "Could not update document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 
@@ -176,6 +179,6 @@ app.patch('/tutors/:Tutor', (req, res) => {
 
 const interval = 5 * 60 * 1000
 setInterval(runScraper, interval);
-
+setInterval(runDailyScraper, interval);
 
 //npm install mongodb --save --> Connects to mongo db

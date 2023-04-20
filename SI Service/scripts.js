@@ -23,7 +23,7 @@ connectToDb((error) => {
 //Call Scraper every 5 mins
 const scraper = 'scraperSI.py'
 function runScraper(){
-    spawn('python3', [scraper]) //Call Scraper
+    spawn('py', [scraper]) //Call Scraper
     console.log("SI Data Updated") //Tell us it updated
     let siData = require('./siData.json')
     let siDailyData = require('./siDailyData.json')
@@ -44,8 +44,6 @@ function runScraper(){
         .catch((error) => {
             console.log("Delete Fail: ", error);
         })
-
-    
 
 
     db.collection('LeadersDaily')
@@ -77,8 +75,8 @@ app.get('/Leaders', (req, res) => {
         .then(() => {
             res.status(200).json(siLeaders)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not fetch documents"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -120,8 +118,8 @@ app.get('/Leaders/:Subject', (req, res) => {
             //template = JSON.stringify(template)
             res.status(200).json(template) //doc is the person's data
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not fetch document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -132,8 +130,8 @@ app.post('/Leaders', (req, res) => {
         .then(result => {
             res.status(200).json(result);
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not create new document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -144,8 +142,8 @@ app.delete('/Leaders/:Name', (req, res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not delete document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 });
 
@@ -156,8 +154,8 @@ app.patch('/Leaders/:Name', (req,res) => {
         .then(result => {
             res.status(200).json(result)
         })
-        .catch(() => {
-            res.status(500).json({Error: "Could not update document"})
+        .catch(error => {
+            res.status(500).json({Error: error})
         })
 })
 

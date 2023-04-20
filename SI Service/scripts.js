@@ -67,16 +67,16 @@ function runScraper(){
 
 //Get the user's data
 app.get('/Leaders', (req, res) => {
-    let siLeaders = []; // This is what we'll be storing the coaches in
-    db.collection('Leaders') //Get the database
+    let siLeaders = []; // This is what we'll be storing the SI Leaders in
+    db.collection('Leaders') //Choose the database "Leaders"
         .find() //Get everyone
-        .sort({"SI Leaders": 1})
-        .forEach(leader => siLeaders.push(leader))
+        .sort({"SI Leaders": 1}) //Sort Alphabetically
+        .forEach(leader => siLeaders.push(leader)) //Fill the array with with data
         .then(() => {
-            res.status(200).json(siLeaders)
+            res.status(200).json(siLeaders) //Return All the SI Leaders in order
         })
         .catch(error => {
-            res.status(500).json({Error: error})
+            res.status(500).json({Error: error}) //Return MongoDB Error on Fail
         })
 });
 

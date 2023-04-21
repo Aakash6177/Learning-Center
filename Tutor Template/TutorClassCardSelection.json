@@ -29,16 +29,6 @@
           "marginTop": "none",
           "marginBottom": "none",
           "items": [
-             {
-              "title": "ACCT",
-              "description": "Accounting",
-              "link": {
-                "relativePath": ""
-              },
-              "image": {
-                "url": "https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-accounting-icon-in-trendy-style-isolated-background-png-image_1540265.jpg"
-              }
-            },
             {
               "title": "CSCI",
               "description": "Computer Science Tutors",

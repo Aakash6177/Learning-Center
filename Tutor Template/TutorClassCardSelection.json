@@ -30,38 +30,18 @@
           "marginBottom": "none",
           "items": [
             {
-              "title": "CSCI",
-              "description": "Computer Science Tutors",
+              "title": "Business",
+              "description": "ACCT, AGBS, DA, DS, ECON, FIN",
               "link": {
                 "relativePath": ""
               },
               "image": {
-                "url": "https://cdn-icons-png.flaticon.com/512/5766/5766858.png"
+                "url": "https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-accounting-icon-in-trendy-style-isolated-background-png-image_1540265.jpg"
               }
             },
             {
-              "title": "MATH",
-              "description": "Mathamatics Tutors",
-              "link": {
-                "relativePath": ""
-              },
-              "image": {
-                "url": "https://cdn-icons-png.flaticon.com/512/3965/3965108.png"
-              }
-            },
-            {
-              "title": "PHYS",
-              "description": "Physics Tutors",
-              "link": {
-                "relativePath": ""
-              },
-              "image": {
-                "url": "https://cdn-icons-png.flaticon.com/512/306/306335.png"
-              }
-            },
-            {
-              "title": "CHEM",
-              "description": "Chemestry Tutors",
+              "title": "Chemestry",
+              "description": "CHEM, BIOL",
               "link": {
                 "relativePath": ""
               },
@@ -70,8 +50,68 @@
               }
             },
             {
-              "title": "PHYCH",
-              "description": "Psychology Tutors",
+              "title": "Communicative Disorders",
+              "description": "CSDS",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/10371/10371102.png"
+              }
+            },
+            {
+              "title": "Computer Science",
+              "description": "CSCI",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/5766/5766858.png"
+              }
+            },
+            {
+              "title": "Education Studies",
+              "description": "CI, EES, EHD, IAS, LING, LS, NSCI, SSCI",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/1995/1995574.png"
+              }
+            },
+             {
+              "title": "Health",
+              "description": "BIOL, HHS, PH, KAC, KINES",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/2966/2966327.png"
+              }
+            },
+            {
+              "title": "Mathamatics",
+              "description": "MATH",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/3965/3965108.png"
+              }
+            },
+            {
+              "title": "Physics",
+              "description": "PHYS",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/306/306335.png"
+              }
+            },
+            {
+              "title": "Psychology",
+              "description": "PHYCH",
               "link": {
                 "relativePath": ""
               },
@@ -80,13 +120,33 @@
               }
             },
             {
-              "title": "ENGL",
-              "description": "English",
+              "title": "Social Sciences",
+              "description": "ANTH, GEOG, HIST, HONOR, PLSI, SOC, WGSS",
               "link": {
                 "relativePath": ""
               },
               "image": {
-                "url": "https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-accounting-icon-in-trendy-style-isolated-background-png-image_1540265.jpg"
+                "url": "https://cdn-icons-png.flaticon.com/512/5403/5403775.png"
+              }
+            },
+            {
+              "title": "Spanish",
+              "description": "SPAN",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/8081/8081829.png"
+              }
+            },
+            {
+              "title": "Writing",
+              "description": "ANTH, COMM, ENGL",
+              "link": {
+                "relativePath": ""
+              },
+              "image": {
+                "url": "https://cdn-icons-png.flaticon.com/512/1973/1973807.png"
               }
             }
           ]

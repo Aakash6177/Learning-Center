@@ -1,49 +1,56 @@
 {
-    "metadata": {
-      "version": "2.0"
-    },
-    "content": [
-      {
-        "elementType": "list",
-        "itemSize": "medium",
-        "listStyle": "grouped",
-        "heading": {
-          "heading": "Learning Center",
-          "headingLevel": 1,
-          "headingTextColor": "black",
-          "description": "Fresno State's Learning Center is a space which encourages students to grow intellectually as critical thinkers. We advance student success by actively using effective strategies to improve content understanding and course grades. Supplemental Instruction (SI) Leaders and Tutors do not teach, rather facilitate students' learning of difficult topics within historically challenging courses or subjects. Students work one-on-one with Academic Coach who provides individualized support addressing unique student needs. The Learning Center aims to boldly integrate the culture and values of each student to inspire a community of life-long learners."
+  "metadata": {
+    "version": "2.0"
+  },
+  "content": [
+    {
+      "elementType": "list",
+      "id": "homepage",
+      "itemSize": "medium",
+      "listStyle": "grouped",
+      "heading": {
+        "heading": "Learning Center",
+        "headingLevel": 1,
+        "headingTextColor": "black",
+        "description": "Fresno State's Learning Center is a space which encourages students to grow intellectually as critical thinkers. We advance student success by actively using effective strategies to improve content understanding and course grades. Supplemental Instruction (SI) Leaders and Tutors do not teach, rather facilitate students' learning of difficult topics within historically challenging courses or subjects. Students work one-on-one with Academic Coach who provides individualized support addressing unique student needs. The Learning Center aims to boldly integrate the culture and values of each student to inspire a community of life-long learners."
+      },
+      "backgroundColor": "#d6204e",
+      "titleTextColor": "#f5f6f6",
+      "descriptionTextColor": "#f5f6f6",
+      "titleFontWeight": "semibold",
+      "badgeTextColor": "#ffffff",
+      "items": [
+        {
+          "title": "Tutoring:",
+          "description": "Studying made simple with students setting their own agenda and working at their own pace.",
+          "link": {
+            "xmodule": {
+              "id": "tutoring"
+            }
+          },
+          "accessoryIcon": "external"
         },
-        "backgroundColor": "#d6204e",
-        "titleTextColor": "#f5f6f6",
-        "descriptionTextColor": "#f5f6f6",
-        "titleFontWeight": "semibold",
-        "badgeTextColor": "#ffffff",
-        "items": [
-          {
-            "title": "Tutoring:",
-            "description": "Studying made simple with students setting their own agenda and working at their own pace.",
-            "link": {
-                "relativePath": ""
-            },
-            "accessoryIcon": "external"
+        {
+          "title": "Supplemental Instruction",
+          "description": "Peer led, weekly group study sessions offered to students enrolled in historically difficult courses.",
+          "link": {
+            "xmodule": {
+              "id": "temp"
+            }
           },
-          {
-            "title": "Supplemental Instruction",
-            "description": "Peer led, weekly group study sessions offered to students enrolled in historically difficult courses.",
-            "link": {
-                "relativePath": ""
-            },
-            "accessoryIcon": "external"
+          "accessoryIcon": "external"
+        },
+        {
+          "title": "Academic Success Coaching",
+          "description": "Academic and personal coaching on time management, study skills, university resources and much more.",
+          "link": {
+            "xmodule": {
+              "id": "learning_center"
+            }
           },
-          {
-            "title": "Academic Success Coaching",
-            "description": "Academic and personal coaching on time management, study skills, university resources and much more.",
-            "link": {
-                "relativePath": ""
-            },
-            "accessoryIcon": "external"
-          }
-        ]
-      }
-    ]
-  }
+          "accessoryIcon": "external"
+        }
+      ]
+    }
+  ]
+}

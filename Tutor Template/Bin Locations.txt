@@ -9,3 +9,6 @@ https://www.npoint.io/docs/4ce62fc378e27c262b8c
 
 !Save the SI Tutors Link to npoint Bin:
 https://api.npoint.io/a97ac7fb10ee05a20834
+
+!Tutor back button to homepage from tutor selection:
+https://www.npoint.io/docs/9f94180503e634f1a2dc

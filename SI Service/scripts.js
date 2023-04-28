@@ -6,6 +6,7 @@ app.use(bodyParser.json()); // read Json files
 const {connectToDb, getDb} = require('./database')
 const { spawn } = require('child_process')
 const template = require("../SI Template/SI_Leader_Template.json")
+const homeTemplate = require("../SI Template/SI_Home.json")
 
 //Connect to Database
 let db
@@ -73,7 +74,7 @@ app.get('/Leaders', (req, res) => {
         .sort({"SI Leaders": 1}) //Sort Alphabetically
         .forEach(leader => siLeaders.push(leader)) //Fill the array with with data
         .then(() => {
-            res.status(200).json(siLeaders) //Return All the SI Leaders in order
+            res.status(200).json(homeTemplate) //Return All the SI Leaders in order
         })
         .catch(error => {
             res.status(500).json({Error: error}) //Return MongoDB Error on Fail

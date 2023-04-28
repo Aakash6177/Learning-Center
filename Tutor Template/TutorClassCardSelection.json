@@ -29,6 +29,7 @@
           "marginTop": "none",
           "marginBottom": "none",
           "listStyle": "separated",
+          "backgroundColor": "theme:subfocal_background_color",
           "items": [
             {
               "title": "Business",

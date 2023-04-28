@@ -1,0 +1,2 @@
+This will go to the N-point API of LC Home
+!Link: https://api.npoint.io/905adec97e29c54b3558

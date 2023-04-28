@@ -45,12 +45,12 @@
               }
             },
             {
-              "title": "Chemestry",
+              "title": "Chemistry",
               "description": "CHEM, BIOL",
               "link": {
                 "xmodule": {
                   "id": "tutoring",
-                  "relativePath": "/Chemestry"
+                  "relativePath": "/Chemistry"
                 }
               },
               "image": {
@@ -110,12 +110,12 @@
               }
             },
             {
-              "title": "Mathamatics",
+              "title": "Mathematics",
               "description": "MATH",
               "link": {
                 "xmodule": {
                   "id": "tutoring",
-                  "relativePath": "/Mathamatics"
+                  "relativePath": "/Mathematics"
                 }
               },
               "image": {

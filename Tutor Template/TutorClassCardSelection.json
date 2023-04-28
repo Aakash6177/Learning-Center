@@ -28,6 +28,7 @@
           "showBottomBorder": false,
           "marginTop": "none",
           "marginBottom": "none",
+          "listStyle": "separated",
           "items": [
             {
               "title": "Business",

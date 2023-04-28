@@ -48,7 +48,10 @@
               "title": "Chemestry",
               "description": "CHEM, BIOL",
               "link": {
-                "relativePath": "/Chemestry"
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Chemestry"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/2933/2933808.png"
@@ -58,7 +61,10 @@
               "title": "Communicative Disorders",
               "description": "CSDS",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/CSDS"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/10371/10371102.png"
@@ -68,7 +74,10 @@
               "title": "Computer Science",
               "description": "CSCI",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Computer Science"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/5766/5766858.png"
@@ -78,7 +87,10 @@
               "title": "Education Studies",
               "description": "CI, EES, EHD, IAS, LING, LS, NSCI, SSCI",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Education Studies"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/1995/1995574.png"
@@ -88,7 +100,10 @@
               "title": "Health",
               "description": "BIOL, HHS, PH, KAC, KINES",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Health"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/2966/2966327.png"
@@ -98,7 +113,10 @@
               "title": "Mathamatics",
               "description": "MATH",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Mathamatics"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/3965/3965108.png"
@@ -108,7 +126,10 @@
               "title": "Physics",
               "description": "PHYS",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Physics"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/306/306335.png"
@@ -118,7 +139,10 @@
               "title": "Psychology",
               "description": "PHYCH",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Psychology"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/4635/4635380.png"
@@ -128,7 +152,10 @@
               "title": "Social Sciences",
               "description": "ANTH, GEOG, HIST, HONOR, PLSI, SOC, WGSS",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Social Sciences"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/5403/5403775.png"
@@ -138,7 +165,10 @@
               "title": "Spanish",
               "description": "SPAN",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Spanish"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/8081/8081829.png"
@@ -148,7 +178,10 @@
               "title": "Writing",
               "description": "ANTH, COMM, ENGL",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Writing"
+                }
               },
               "image": {
                 "url": "https://cdn-icons-png.flaticon.com/512/1973/1973807.png"

@@ -6,6 +6,7 @@ app.use(bodyParser.json()); // read Json files
 const { connectToDb, getDb } = require('./database.js')
 const { spawn } = require('child_process')
 const template = require("../Tutor Template/tutor_temp_template.json")
+const homeTemplate = require("../Tutor Template/TutorClassCardSelection.json")
 
 //Database connection
 let db
@@ -76,7 +77,7 @@ app.get('/tutors', (req, res) => { //Find tutors
         .sort({ Subject: 1, Tutor: 1 }) //Sort by subject and name
         .forEach(tutor => tutors.push(tutor)) //Fill the Tutor array
         .then(() => {
-            res.status(200).json(tutors); //If all good, send back the tutors
+            res.status(200).json(homeTemplate); //If all good, send back the tutors
         })
         .catch(error => {
             res.status(500).json({ Error: error })

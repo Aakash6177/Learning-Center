@@ -33,7 +33,10 @@
               "title": "Business",
               "description": "ACCT, AGBS, DA, DS, ECON, FIN",
               "link": {
-                "relativePath": ""
+                "xmodule": {
+                  "id": "tutoring",
+                  "relativePath": "/Business"
+                }
               },
               "image": {
                 "url": "https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-accounting-icon-in-trendy-style-isolated-background-png-image_1540265.jpg"

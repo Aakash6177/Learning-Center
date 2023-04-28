@@ -24,7 +24,7 @@ connectToDb((error) => {
 //Call Scraper every 5 mins
 const scraper = 'scraperSI.py'
 function runScraper(){
-    spawn('py', [scraper]) //Call Scraper
+    spawn('python3', [scraper]) //Call Scraper
     console.log("SI Data Updated") //Tell us it updated
     let siData = require('./siData.json')
     let siDailyData = require('./siDailyData.json')

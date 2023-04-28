@@ -1,73 +1,73 @@
 {
-  "metadata": {
-    "version": "2.0"
-  },
   "content": [
     {
-      "elementType": "list",
-      "itemSize": "medium",
-      "listStyle": "grouped",
-      "heading": {
-        "heading": "Academic Success Coaching: ",
-        "headingLevel": 1,
-        "headingTextColor": "black",
-        "description": "Academic Success Coaching provides academic support tailored to your needs, so you can reach your fullest potential at Fresno State. We use a holistic approach to coach students in navigating the college experience. In a dedicated one-on-one setting, topics such as motivation, study skills, time management and much more can be explored."
-      },
-      "backgroundColor": "#d6204e",
-      "titleTextColor": "#f5f6f6",
-      "descriptionTextColor": "#f5f6f6",
-      "titleFontWeight": "semibold",
-      "badgeTextColor": "#ffffff",
       "items": [
         {
-          "title": "Academic Coaching:",
-          "description": "Meet one on one with an Academic Coach",
           "link": {
             "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html"
           },
+          "title": "Academic Coaching:",
+          "description": "Meet one on one with an Academic Coach",
           "accessoryIcon": "external"
         },
         {
-          "title": "Academic Success Workshops:",
-          "description": "Earn more about study strategies on your own time",
           "link": {
             "external": "https://studentaffairs.fresnostate.edu/lrc/workshops/index.html"
           },
+          "title": "Academic Success Workshops:",
+          "description": "Earn more about study strategies on your own time",
           "accessoryIcon": "external"
         },
         {
-          "title": "Toolkits:",
-          "description": "Quick tools on how to better organize and study for classes (Time Management, note taking, etc.)",
           "link": {
             "external": "https://studentaffairs.fresnostate.edu/lrc/asc/toolkit.html"
           },
+          "title": "Toolkits:",
+          "description": "Quick tools on how to better organize and study for classes (Time Management, note taking, etc.)",
           "accessoryIcon": "external"
         },
         {
-          "title": "Probation:",
-          "description": "Received a letter regarding academic standing? Meet with an Academic Success Coach",
           "link": {
             "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html"
           },
+          "title": "Probation:",
+          "description": "Received a letter regarding academic standing? Meet with an Academic Success Coach",
           "accessoryIcon": "external"
         },
         {
-          "title": "Student Referral to Academic Success Coaching:",
-          "description": "Refer a student to Academic Success Coaching for academic coaching",
           "link": {
             "external": "https://studentaffairs.fresnostate.edu/lrc/asc/faculty.html"
           },
+          "title": "Student Referral to Academic Success Coaching:",
+          "description": "Refer a student to Academic Success Coaching for academic coaching",
           "accessoryIcon": "external"
         },
         {
-          "title": "Academic Success Coaching Workshop Request:",
-          "description": "Request an Academic Success Coaching workshop for my class and/or organization",
           "link": {
             "external": "https://fresnostate.co1.qualtrics.com/jfe/form/SV_8kcWeOVjQeza9a6"
           },
+          "title": "Academic Success Coaching Workshop Request:",
+          "description": "Request an Academic Success Coaching workshop for my class and/or organization",
           "accessoryIcon": "external"
         }
-      ]
+      ],
+      "heading": {
+        "heading": "Academic Success Coaching: ",
+        "description": "Academic Success Coaching provides academic support tailored to your needs, so you can reach your fullest potential at Fresno State. We use a holistic approach to coach students in navigating the college experience. In a dedicated one-on-one setting, topics such as motivation, study skills, time management and much more can be explored.",
+        "headingLevel": 1,
+        "headingTextColor": "black"
+      },
+      "itemSize": "medium",
+      "listStyle": "grouped",
+      "elementType": "list",
+      "badgeTextColor": "#ffffff",
+      "titleTextColor": "#f5f6f6",
+      "backgroundColor": "#d6204e",
+      "titleFontWeight": "semibold",
+      "descriptionTextColor": "#f5f6f6"
     }
-  ]
+  ],
+  "metadata": {
+    "version": "2.0"
+  }
 }

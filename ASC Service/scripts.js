@@ -5,6 +5,7 @@ const bodyParser = require('body-parser'); // Parses the requests when we need t
 app.use(bodyParser.json()); // read Json files
 const { connectToDb, getDb } = require('./database')
 const { spawn } = require('child_process')
+const template = require("../ASC Template/ASC_Home_V2.json")
 
 //Connect to Database
 let db
@@ -21,7 +22,7 @@ connectToDb((error) => {
 //Call Scraper every 5 mins
 const scraper = 'scraperASC.py'
 function runScraper(){
-    spawn('py', [scraper]) //Call Scraper
+    spawn('python3', [scraper]) //Call Scraper
     console.log("ASC Data Updated") //Tell us it updated
     let ascData = require('./ascData.json')
 
@@ -53,7 +54,7 @@ app.get('/Coaches', (req, res) => {
         .sort({ "Coach Name": 1 })
         .forEach(coach => coaches.push(coach))
         .then(() => {
-            res.status(200).json(coaches)
+            res.status(200).json(template)
         })
         .catch(error => {
             res.status(500).json({Error: error})

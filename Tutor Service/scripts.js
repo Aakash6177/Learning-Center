@@ -23,7 +23,7 @@ connectToDb((err) => {
 const scraper = 'scraperTutor.py'
 const dailyScraper = 'scraperTutorStatus.py'
 function runScraper() {
-    spawn('py', [scraper]) //Call Scraper --> Will by python3 instead of py in cloud
+    spawn('python3', [scraper]) //Call Scraper --> Will by python3 instead of py in cloud
     let tutorData = require('./tutorData.json')
 
     db.collection('tutors')
@@ -46,7 +46,7 @@ function runScraper() {
 }
 
 function runDailyScraper() {
-    spawn('py', [dailyScraper]) //Call Scraper --> Will by python3 instead of py in cloud
+    spawn('python3', [dailyScraper]) //Call Scraper --> Will by python3 instead of py in cloud
     let tutorDailyData = require('./tutorDailyData.json')
 
     db.collection('tutorsDaily')

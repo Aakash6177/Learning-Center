@@ -7,7 +7,6 @@ const {connectToDb, getDb} = require('./database')
 const { spawn } = require('child_process')
 const template = require("../SI Template/SI_Leader_Template.json")
 const homeTemplate = require("../SI Template/SI_Home.json")
-
 //Connect to Database
 let db
 connectToDb((error) => {
@@ -69,11 +68,18 @@ function runScraper(){
 //Get the user's data
 app.get('/Leaders', (req, res) => {
     let siLeaders = []; // This is what we'll be storing the SI Leaders in
-    db.collection('Leaders') //Choose the database "Leaders"
+    db.collection('LeadersDaily') //Choose the database "Leaders"
         .find() //Get everyone
-        .sort({"SI Leaders": 1}) //Sort Alphabetically
+        .sort({"Subject": 1}) //Sort Alphabetically
         .forEach(leader => siLeaders.push(leader)) //Fill the array with with data
         .then(() => {
+            homeTemplate.content[0].heading.description.length = 0;
+            for(i = 0; i < siLeaders.length; i++){
+                homeTemplate.content[0].heading.description += "<strong>Subject:</strong> " + siLeaders[i]["Subject"] + "<br>" +
+                                                               "<strong>SI Leader:</strong> " + siLeaders[i]["SI Leader"] + "<br>" +
+                                                               "<strong>Notes:</strong> " + siLeaders[i]["Notes"] + "<br>"
+
+            }
             res.status(200).json(homeTemplate) //Return All the SI Leaders in order
         })
         .catch(error => {

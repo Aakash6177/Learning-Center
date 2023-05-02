@@ -4,6 +4,12 @@
     },
     "content": [
       {
+        "heading": {
+            "heading": "Learning Center",
+            "description": "<p style=\"text-align: center;\"> <h1 style=\"text-align: center;\"> ASC Home</h1>Academic Success Coaching at Fresno State provides personalized one-on-one support to help students navigate college and improve their academic performance by addressing topics such as motivation, study skills, and time management.</p>",
+            "headingLevel": 1,
+            "headingTextColor": "black"
+        },
         "elementType": "list",
         "id": "homepage",
         "itemSize": "medium",

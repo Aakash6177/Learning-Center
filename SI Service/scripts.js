@@ -73,12 +73,11 @@ app.get('/Leaders', (req, res) => {
         .sort({"Subject": 1}) //Sort Alphabetically
         .forEach(leader => siLeaders.push(leader)) //Fill the array with with data
         .then(() => {
-            homeTemplate.content[0].heading.description.length = 0;
+            homeTemplate.content[0].heading.description = "";
             for(i = 0; i < siLeaders.length; i++){
                 homeTemplate.content[0].heading.description += "<strong>Subject:</strong> " + siLeaders[i]["Subject"] + "<br>" +
                                                                "<strong>SI Leader:</strong> " + siLeaders[i]["SI Leader"] + "<br>" +
                                                                "<strong>Notes:</strong> " + siLeaders[i]["Notes"] + "<br>"
-
             }
             res.status(200).json(homeTemplate) //Return All the SI Leaders in order
         })

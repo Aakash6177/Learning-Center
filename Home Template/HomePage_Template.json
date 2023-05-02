@@ -1,56 +1,65 @@
 {
-    "content": [
-        {
-            "id": "homepage",
-            "items": [
-                {
-                    "link": {
-                        "xmodule": {
-                            "id": "tutoring"
-                        }
-                    },
-                    "title": "Tutoring:",
-                    "description": "Studying made simple with students setting their own agenda and working at their own pace.",
-                    "accessoryIcon": "external"
-                },
-                {
-                    "link": {
-                        "xmodule": {
-                            "id": "temp"
-                        }
-                    },
-                    "title": "Supplemental Instruction",
-                    "description": "Peer led, weekly group study sessions offered to students enrolled in historically difficult courses.",
-                    "accessoryIcon": "external"
-                },
-                {
-                    "link": {
-                        "xmodule": {
-                            "id": "learning_center"
-                        }
-                    },
-                    "title": "Academic Success Coaching",
-                    "description": "Academic and personal coaching on time management, study skills, university resources and much more.",
-                    "accessoryIcon": "external"
-                }
-            ],
-            "heading": {
-                "heading": "Learning Center",
-                "description": "Fresno State's Learning Center is a space which encourages students to grow intellectually as critical thinkers. We advance student success by actively using effective strategies to improve content understanding and course grades. Supplemental Instruction (SI) Leaders and Tutors do not teach, rather facilitate students' learning of difficult topics within historically challenging courses or subjects. Students work one-on-one with Academic Coach who provides individualized support addressing unique student needs. The Learning Center aims to boldly integrate the culture and values of each student to inspire a community of life-long learners.",
-                "headingLevel": 1,
-                "headingTextColor": "black"
-            },
-            "itemSize": "medium",
-            "listStyle": "grouped",
-            "elementType": "list",
-            "badgeTextColor": "#ffffff",
-            "titleTextColor": "#f5f6f6",
-            "backgroundColor": "#d6204e",
-            "titleFontWeight": "semibold",
-            "descriptionTextColor": "#f5f6f6"
-        }
-    ],
     "metadata": {
-        "version": "2.0"
-    }
-}
+      "version": "2.0"
+    },
+    "content": [
+      {
+        "heading": {
+            "heading": "Learning Center",
+            "description": "<p style=\"text-align: center;\"> <h1 style=\"text-align: center;\"> Learning Center</h1>The Learning Center offers Supplemental Instruction (SI) Leaders and Tutors who facilitate learning of difficult topics within challenging courses, as well as one-on-one support from an Academic Coach who addresses unique student needs. The Learning Center aims to inspire a community of lifelong learners by integrating the culture and values of each student</p>",
+            "headingLevel": 1,
+            "headingTextColor": "black"
+        },
+        "elementType": "list",
+        "id": "homepage",
+        "itemSize": "medium",
+        "listStyle": "grouped",
+        "backgroundColor": "#d6204e",
+        "titleTextColor": "#f5f6f6",
+        "descriptionTextColor": "#f5f6f6",
+        "titleFontWeight": "semibold",
+        "badgeTextColor": "#ffffff",
+        "items": [
+            {
+                "title": "Tutoring",
+                "description": "Studying made simple with students setting their own agenda and working at their own pace.",
+                "link": {
+                    "xmodule": {
+                        "id": "tutoring"
+                    }
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/2083/2083305.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Supplemental Instruction",
+                "description": "Peer led, weekly group study sessions offered to students enrolled in historically difficult courses.",
+                "link": {
+                    "xmodule": {
+                        "id": "temp"
+                    }
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/2643/2643361.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Academic Success Coaching",
+                "description": "Academic and personal coaching on time management, study skills, university resources and much more.",
+                "link": {
+                    "xmodule": {
+                        "id": "learning_center"
+                    }
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/919/919465.png",
+                    "alt": "Dima Pima"
+                }
+            }
+        ]
+      }
+    ]
+  }

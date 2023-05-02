@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Parses the requests when we need t
 app.use(bodyParser.json()); // read Json files
 const { connectToDb, getDb } = require('./database')
 const { spawn } = require('child_process')
-const template = require("../ASC Template/ASC_Home_V2.json")
+const template = require("../Home Template/HomePage_Template.json")
 
 //Connect to Database
 let db

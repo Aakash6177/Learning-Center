@@ -1,0 +1,86 @@
+{
+    "metadata": {
+      "version": "2.0"
+    },
+    "content": [
+      {
+        "elementType": "list",
+        "id": "homepage",
+        "itemSize": "medium",
+        "listStyle": "grouped",
+        "backgroundColor": "#d6204e",
+        "titleTextColor": "#f5f6f6",
+        "descriptionTextColor": "#f5f6f6",
+        "titleFontWeight": "semibold",
+        "badgeTextColor": "#ffffff",
+        "items": [
+            {
+                "title": "Academic Coaching",
+                "description": "Meet one on one with an Academic Coach.",
+                "link": {
+                    "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/919/919465.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Academic Success Workshops",
+                "description": "Learn more about study strategies on your own time",
+                "link": {
+                    "external": "https://studentaffairs.fresnostate.edu/lrc/workshops/index.html"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/2849/2849198.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Toolkits",
+                "description": "Quick tools on how to better organize and study for classes (Time Management, note taking, etc.)",
+                "link": {
+                    "external": "https://studentaffairs.fresnostate.edu/lrc/asc/toolkit.html"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/4229/4229133.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Probation",
+                "description": "Received a letter regarding academic standing? Meet with an Academic Success Coach",
+                "link": {
+                    "external": "https://studentaffairs.fresnostate.edu/lrc/asc/students.html"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/6409/6409769.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "Student Referral to ASC",
+                "description": "Refer a student to Academic Success Coaching for academic coaching.",
+                "link": {
+                    "external": "https://studentaffairs.fresnostate.edu/lrc/asc/faculty.html"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/4098/4098848.png",
+                    "alt": "Dima Pima"
+                }
+            },
+            {
+                "title": "ASC Workshop Request",
+                "description": "Request an Academic Success Coaching workshop for my class and/or organization",
+                "link": {
+                    "external": "https://fresnostate.co1.qualtrics.com/jfe/form/SV_8kcWeOVjQeza9a6"
+                },
+                "image": {
+                    "url": "https://cdn-icons-png.flaticon.com/512/2752/2752517.png",
+                    "alt": "Dima Pima"
+                }
+            }
+        ]
+      }
+    ]
+  }

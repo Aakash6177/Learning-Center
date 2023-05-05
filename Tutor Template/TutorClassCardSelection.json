@@ -2,34 +2,27 @@
   "metadata": {
     "version": "2.0"
   },
-  "contentContainerWidth": "full",
   "content": [
     {
-      "elementType": "portlet",
-      "id": "shadow",
-      "forceAjaxOnLoad": false,
-      "shadow": "loose",
-      "borderColor": "transparent",
       "heading": {
-        "heading": "Choose Your Tutoring Subject: ",
-        "headingFontSize": "1rem",
-        "headingFontWeight": "semibold",
-        "headingLineHeight": "2rem",
-        "marginTop": "none",
-        "marginBottom": "xtight",
-        "buttons": []
+        "headingTextAlignment": "center",
+        "heading": "Learning Center<br>Tutoring",
+        "headingTextColor": "black",
+        "descriptionTextColor": "black",
+        "headingLevel": 1
       },
-      "content": [
-        {
-          "elementType": "list",
-          "itemSize": "small",
-          "titleLineClamp": 1,
-          "descriptionLineClamp": 1,
-          "showBottomBorder": false,
-          "marginTop": "none",
-          "marginBottom": "none",
-          "listStyle": "separated",
-          "backgroundColor": "theme:subfocal_background_color",
+        "elementType": "list",
+        "id": "homepage",
+        "itemSize": "medium",
+        "listStyle": "separated",
+        "backgroundColor": "#95bafa",
+        "titleTextColor": "#000000",
+        "labelTextColor": "#000000",
+        "descriptionTextColor": "#000000",
+        "titleFontWeight": "semibold",
+        "badgeTextColor": "#ffffff",
+        "textblockMarginLeft": "responsive",
+        "textblockMarginRight": "responsive",
           "items": [
             {
               "title": "Business",
@@ -145,7 +138,7 @@
                 }
               },
               "image": {
-                "url": "https://cdn-icons-png.flaticon.com/512/4635/4635380.png"
+                "url": "https://w7.pngwing.com/pngs/828/364/png-transparent-computer-icons-psychology-understanding-mind-others-monochrome-head-psychology.png"
               }
             },
             {
@@ -158,7 +151,7 @@
                 }
               },
               "image": {
-                "url": "https://cdn-icons-png.flaticon.com/512/5403/5403775.png"
+                "url": "https://cdn-icons-png.flaticon.com/512/3079/3079325.png"
               }
             },
             {
@@ -189,7 +182,5 @@
             }
           ]
         }
-      ]
-    }
-  ]
+    ]
 }

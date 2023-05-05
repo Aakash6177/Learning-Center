@@ -11,11 +11,14 @@
             "backgroundColor": "theme:subfocal_background_color",
             "borderColor": "transparent",
             "heading": {
-                "heading": "Separated Style",
-                "headingLevel": 3,
-                "headingTextColor": "grey",
-                "description": "With subfocal background color for visibility; otherwise focal-on-focal colors would make it impossible to see the separated list styling"
+                "heading": "Tutoring: ",
+                "headingLevel": 1,
+                "headingTextColor": "black",
+                "headingTextAlignment": "center"
             },
+            "titleTextColor": "#000000",
+            "labelTextColor": "#000000",
+            "descriptionTextColor": "#000000",
             "items": [
                 {
                     "imageHorizontalPosition": "right",

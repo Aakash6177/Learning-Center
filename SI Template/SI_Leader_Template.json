@@ -12,10 +12,13 @@
             "borderColor": "transparent",
             "heading": {
                 "heading": "SI Leaders: ",
-                "headingLevel": 2,
+                "headingLevel": 1,
                 "headingTextColor": "black",
-                "description": "Search through the SI leaders to find the perfect one for your on a given subject."
+                "headingTextAlignment": "center"
             },
+            "titleTextColor": "#000000",
+            "labelTextColor": "#000000",
+            "descriptionTextColor": "#000000",
             "items": [
                 {
                     "imageHorizontalPosition": "right",

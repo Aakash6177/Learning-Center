@@ -94,28 +94,53 @@ app.get('/Leaders/:Subject', (req, res) => {
         .then(() => {
             // template = JSON.parse(template);
             template.content[0].items.length = 0;
+            template.content[0].heading.heading = "SI Leader: " + req.params.Subject;
             for(i = 0; i < siLeaders.length; i++){
-                template.content[0].items.push(
-                    {
-                        "imageHorizontalPosition": "right",
-                        "imageVerticalPosition": "top",
-                        "title": "SI Leader: " + siLeaders[i]["SI Leader"],
-                        "description": "Instructor: " + siLeaders[i]["Instructor"] + "<br>"
-                                     + "Subject: " + siLeaders[i]["Subject"] + "<br><br>"
-                                     + "Pronouns: " + siLeaders[i]["SI Leader"] + "<br>"
-                                     + "Sessions:<br>"
-                                     + siLeaders[i]["Session One"] + "<br>"
-                                     + siLeaders[i]["Session Two"] + "<br><br>"
-                                     + "Office Hours:<br>"
-                                     + siLeaders[i]["Office Hour One"] + "<br>"
-                                     + siLeaders[i]["Office Hour Two"] + "<br><br>"
-                                     + "Zoom Link: <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a><br>",
-                        "image": {
-                            "url": siLeaders[i]["Image Url"],
-                            "alt": siLeaders[i]["SI Leader"]
+                if(siLeaders[i]["Zoom Link"] != "NA"){
+                    template.content[0].items.push(
+                        {
+                            "imageHorizontalPosition": "right",
+                            "imageVerticalPosition": "top",
+                            "title": "SI Leader: " + siLeaders[i]["SI Leader"],
+                            "description": "<strong>Instructor:</strong> " + siLeaders[i]["Instructor"] + "<br>"
+                                         + "<strong>Subject:</strong> " + siLeaders[i]["Subject"] + "<br><br>"
+                                         + "<strong>Pronouns:</strong> " + siLeaders[i]["SI Leader"] + "<br>"
+                                         + "<strong>Sessions:</strong><br>"
+                                         + siLeaders[i]["Session One"] + "<br>"
+                                         + siLeaders[i]["Session Two"] + "<br><br>"
+                                         + "<strong>Office Hours:</strong><br>"
+                                         + siLeaders[i]["Office Hour One"] + "<br>"
+                                         + siLeaders[i]["Office Hour Two"] + "<br><br>"
+                                         + "<strong>Zoom Link:</strong> <a href=" +  siLeaders[i]["Zoom Link"] + ">" + siLeaders[i]["Zoom Link"] + "</a>",
+                            "image": {
+                                "url": siLeaders[i]["Image Url"],
+                                "alt": siLeaders[i]["SI Leader"]
+                            }
                         }
-                    }
-                )
+                    )    
+                }
+                else{
+                    template.content[0].items.push(
+                        {
+                            "imageHorizontalPosition": "right",
+                            "imageVerticalPosition": "top",
+                            "title": "SI Leader: " + siLeaders[i]["SI Leader"],
+                            "description": "<strong>Instructor:</strong> " + siLeaders[i]["Instructor"] + "<br>"
+                                         + "<strong>Subject:</strong> " + siLeaders[i]["Subject"] + "<br><br>"
+                                         + "<strong>Pronouns:</strong> " + siLeaders[i]["SI Leader"] + "<br>"
+                                         + "<strong>Sessions:</strong><br>"
+                                         + siLeaders[i]["Session One"] + "<br>"
+                                         + siLeaders[i]["Session Two"] + "<br><br>"
+                                         + "<strong>Office Hours:</strong><br>"
+                                         + siLeaders[i]["Office Hour One"] + "<br>"
+                                         + siLeaders[i]["Office Hour Two"],
+                            "image": {
+                                "url": siLeaders[i]["Image Url"],
+                                "alt": siLeaders[i]["SI Leader"]
+                            }
+                        }
+                    ) 
+                }
             }
             // console.log(template)
             //template = JSON.stringify(template)

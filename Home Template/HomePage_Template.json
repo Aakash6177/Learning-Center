@@ -5,20 +5,25 @@
     "content": [
       {
         "heading": {
+            "headingTextAlignment": "center",
+            "descriptionTextAlignment": "center",
             "heading": "Learning Center",
-            "description": "<p style=\"text-align: center;\"> <h1 style=\"text-align: center;\"> Learning Center</h1>The Learning Center offers Supplemental Instruction (SI) Leaders and Tutors who facilitate learning of difficult topics within challenging courses, as well as one-on-one support from an Academic Coach who addresses unique student needs. The Learning Center aims to inspire a community of lifelong learners by integrating the culture and values of each student</p>",
+            "description": "<p style=\"text-align: center;\">The Learning Center offers Supplemental Instruction (SI) Leaders and Tutors who facilitate learning of difficult topics within challenging courses, as well as one-on-one support from an Academic Success Coach who addresses unique student needs. The Learning Center aims to inspire a community of lifelong learners by integrating the culture and values of each student.</p>",
             "headingLevel": 1,
-            "headingTextColor": "black"
+            "headingTextColor": "black",
+            "descriptionTextColor": "black"
         },
         "elementType": "list",
         "id": "homepage",
         "itemSize": "medium",
-        "listStyle": "grouped",
-        "backgroundColor": "#d6204e",
-        "titleTextColor": "#f5f6f6",
-        "descriptionTextColor": "#f5f6f6",
+        "listStyle": "separated",
+        "backgroundColor": "#95bafa",
+        "titleTextColor": "#000000",
+        "descriptionTextColor": "#000000",
         "titleFontWeight": "semibold",
         "badgeTextColor": "#ffffff",
+        "textblockMarginLeft": "responsive",
+        "textblockMarginRight": "responsive",
         "items": [
             {
                 "title": "Tutoring",

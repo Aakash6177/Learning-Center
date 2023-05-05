@@ -93,7 +93,7 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
         .then(() => {
             let status = require("./tutorDailyData.json");
             template.content[0].items.length = 0;
-            template.content[0].heading.heading = tutors[0]["Subject"];
+            template.content[0].heading.heading = "Tutoring: " + req.params.Subject;
             for (i = 0; i < tutors.length; i++) {
                 let tutorStatus = status.find(stat => stat["Tutor Name"] === tutors[i]["Tutor Name"])
                 let statusOnOff;
@@ -107,14 +107,14 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
                     template.content[0].items.push(
                         {
                             "title": "Tutor: " + tutors[i]["Tutor Name"],
-                            "description": "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
-                                + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
-                                + "Schedule: <br>"
-                                + "M: " + tutors[i]["Monday"] + "<br>"
-                                + "T: " + tutors[i]["Tuesday"] + "<br>"
-                                + "W: " + tutors[i]["Wednesday"] + "<br>"
-                                + "TH: " + tutors[i]["Thursday"] + "<br>"
-                                + "F: " + tutors[i]["Friday"] + "<br>",
+                            "description": "<strong>Primary Courses:</strong> <br>" + tutors[i]["Primary Courses"] + "<br><br>"
+                                + "<strong>Secondary Courses:</strong> <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                + "<strong>Schedule:</strong> <br>"
+                                + "MON: " + tutors[i]["Monday"] + "<br>"
+                                + "TUE: " + tutors[i]["Tuesday"] + "<br>"
+                                + "WED: " + tutors[i]["Wednesday"] + "<br>"
+                                + "THU: " + tutors[i]["Thursday"] + "<br>"
+                                + "FRI: " + tutors[i]["Friday"] + "<br>",
                             "imageHorizontalPosition": "right",
                             "imageVerticalPosition": "top",
                             "imageBorderRadius": "full",
@@ -131,15 +131,15 @@ app.get('/tutors/:Subject', (req, res) => { //Find specific tutors
                     template.content[0].items.push(
                         {
                             "title": "Tutor: " + tutors[i]["Tutor Name"],
-                            "description": "Specializations: " + tutors[i]["Specializations"] + "<br><br>"
-                                + "Primary Courses: <br>" + tutors[i]["Primary Courses"] + "<br><br>"
-                                + "Secondary Courses: <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
-                                + "Schedule: <br>"
-                                + "M: " + tutors[i]["Monday"] + "<br>"
-                                + "T: " + tutors[i]["Tuesday"] + "<br>"
-                                + "W: " + tutors[i]["Wednesday"] + "<br>"
-                                + "TH: " + tutors[i]["Thursday"] + "<br>"
-                                + "F: " + tutors[i]["Friday"] + "<br>",
+                            "description": "<strong>Specializations:</strong> " + tutors[i]["Specializations"] + "<br><br>"
+                                + "<strong>Primary Courses:</strong> <br>" + tutors[i]["Primary Courses"] + "<br><br>"
+                                + "<strong>Secondary Courses:</strong> <br>" + tutors[i]["Secondary Courses"] + "<br><br>"
+                                + "<strong>Schedule:</strong> <br>"
+                                + "MON: " + tutors[i]["Monday"] + "<br>"
+                                + "TUE: " + tutors[i]["Tuesday"] + "<br>"
+                                + "WED: " + tutors[i]["Wednesday"] + "<br>"
+                                + "THU: " + tutors[i]["Thursday"] + "<br>"
+                                + "FRI: " + tutors[i]["Friday"] + "<br>",
                             "imageHorizontalPosition": "right",
                             "imageVerticalPosition": "top",
                             "imageBorderRadius": "full",

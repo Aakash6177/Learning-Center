@@ -2,23 +2,29 @@
   "metadata": {
     "version": "2.0"
   },
-  "contentContainerWidth": "narrow",
   "content": [
     {
       "heading": {
-        "heading": "Welcome to Supplemental Instruction. Please Choose a Subject!",
         "headingTextAlignment": "center",
+        "descriptionTextAlignment": "left",
+        "heading": "Learning Center<br>Supplemental Instruction.",
         "description": "",
-        "headingTextColor": "black"
+        "headingTextColor": "black",
+        "descriptionTextColor": "black",
+        "headingLevel": 1
       },
-      "elementType": "grid",
-      "id": "density_loose_springboard",
-      "gridStyle": "springboard",
-      "gridDensity": "loose",
-      "textblockLineClamp": 1,
-      "titleFontSize": "small",
-      "marginBottom": "loose",
-      "items": [
+        "elementType": "list",
+        "id": "homepage",
+        "itemSize": "medium",
+        "listStyle": "separated",
+        "backgroundColor": "#95bafa",
+        "titleTextColor": "#000000",
+        "labelTextColor": "#000000",
+        "titleFontWeight": "semibold",
+        "badgeTextColor": "#ffffff",
+        "textblockMarginLeft": "responsive",
+        "textblockMarginRight": "responsive",
+        "items": [
         {
           "label": "Accounting",
           "link": {
@@ -28,7 +34,7 @@
             }
           },
           "image": {
-            "url": "https://png.pngtree.com/png-vector/20190704/ourmid/pngtree-accounting-icon-in-trendy-style-isolated-background-png-image_1540265.jpg"
+            "url": "https://cdn-icons-png.flaticon.com/512/5231/5231813.png"
           }
         },
         {

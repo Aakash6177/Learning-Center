@@ -5,7 +5,7 @@ const bodyParser = require('body-parser'); // Parses the requests when we need t
 app.use(bodyParser.json()); // read Json files
 const { connectToDb, getDb } = require('./database.js')
 const { spawn } = require('child_process')
-const template = require("../Tutor Template/tutor_temp_template.json")
+const template = require("../Tutor Template/tutor_template.json")
 const homeTemplate = require("../Tutor Template/TutorClassCardSelection.json")
 
 //Database connection

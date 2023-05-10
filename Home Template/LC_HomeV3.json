@@ -6,7 +6,7 @@
       {
         "elementType": "list",
         "id": "homepage",
-        "itemSize": "medium",
+        "itemSize": "unlimited",
         "listStyle": "grouped",
         "backgroundColor": "#d6204e",
         "titleTextColor": "#f5f6f6",
@@ -24,7 +24,7 @@
                 },
                 "image": {
                     "url": "https://cdn-icons-png.flaticon.com/512/2083/2083305.png",
-                    "alt": "Dima Pima"
+                    "alt": "Tutoring"
                 }
             },
             {
@@ -37,7 +37,7 @@
                 },
                 "image": {
                     "url": "https://cdn-icons-png.flaticon.com/512/2643/2643361.png",
-                    "alt": "Dima Pima"
+                    "alt": "Supplemental Instruction"
                 }
             },
             {
@@ -50,7 +50,7 @@
                 },
                 "image": {
                     "url": "https://cdn-icons-png.flaticon.com/512/919/919465.png",
-                    "alt": "Dima Pima"
+                    "alt": "Success Coaching"
                 }
             }
         ]

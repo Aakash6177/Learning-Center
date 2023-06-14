@@ -15,6 +15,10 @@ The [Learning Center](https://studentaffairs.fresnostate.edu/lrc/index.html) sub
 ### Product Video Demo
 Video Demo of the [Learning Center Application](https://drive.google.com/file/d/1Fb3vjvxe_OyAvMtNUA-L2CgESP9RaoCj/view?usp=sharing)
 
+### Software Requirements Specification & Software Design Document
+- Learning Center - [SRS Document](https://github.com/Aakash6177/Learning-Center/blob/main/Final_srs_LC152.pdf)
+- Learning Center - [SDD](https://github.com/Aakash6177/Learning-Center/blob/main/Final_SDD_LC152.pdf)
+
 ## Technology - Micro-service Architecture
 ![Learning Center Micro-service Architecture](https://github.com/Aakash6177/Learning-Center/blob/main/LCScreenShots/LCMicroArch1.png?raw=true)
 ![UML/Use Case Diagram](https://github.com/Aakash6177/Learning-Center/blob/main/LCScreenShots/LCMicroArch.png?raw=true)

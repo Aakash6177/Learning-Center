@@ -1,8 +1,8 @@
-# Learning Center Sub-App - Spring 2023 CSCI 152
-Proof of concept sub-application for the [CSU-Fresno Mobile Appplication](https://technology.fresnostate.edu/mobileapp.html). This was a project for our Software Engineering course ([CSCI 152](https://www.fresnostate.edu/catalog/courses-by-department/computer-science/index.html#csci152e) - Spring 2023). Sponsored by [Modo Labs inc.](https://modolabs.com/)
+# Software Engineering Project - Learning Center Sub-App
+Proof of concept sub-application for the [CSU-Fresno Mobile Application](https://technology.fresnostate.edu/mobileapp.html). This was a project for our Software Engineering course ([CSCI 152](https://www.fresnostate.edu/catalog/courses-by-department/computer-science/index.html#csci152e) - Spring 2023). Sponsored by [Modo Labs inc.](https://modolabs.com/)
 
 ### Product Scope
-The [Learning Center](https://studentaffairs.fresnostate.edu/lrc/index.html) sub-application will be designed to facilitate access to all of its services ([Academic Success Coaching](https://studentaffairs.fresnostate.edu/lrc/asc/index.html/index.html), [Tutoring](https://docs.google.com/spreadsheets/d/1c9ulWY3L3aeC2TSHTLtYVmIX7SnO8N0XQHvRmcJuG-k/edit#gid=163198715) and [Supplemental Instruction](https://studentaffairs.fresnostate.edu/lrc/suppinstruction/index.html)) in a mobile friendly application using an intuitive and accessible interface. The goal of this application is to facilitate access to these services to as many students as possible, expanding its current use from only a Desktop/Laptop website.
+The [Learning Center](https://studentaffairs.fresnostate.edu/lrc/index.html) sub-application is designed to facilitate access to all of its services ([Academic Success Coaching](https://studentaffairs.fresnostate.edu/lrc/asc/index.html/index.html), [Tutoring](https://docs.google.com/spreadsheets/d/1c9ulWY3L3aeC2TSHTLtYVmIX7SnO8N0XQHvRmcJuG-k/edit#gid=163198715) and [Supplemental Instruction](https://studentaffairs.fresnostate.edu/lrc/suppinstruction/index.html)) in a mobile friendly application using an intuitive and accessible interface. The goal of this application is to increase ease of access to these services to as many students as possible, expanding its current use from only a Desktop/Laptop website.
 
 ### Team Members
 - [Eric Yang](https://www.linkedin.com/in/yang-eric/) - Backend Developer
